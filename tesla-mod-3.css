@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+nav img {
+    width: 90px;
+}
+
+nav ul,
+ol {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+nav ul li,
+nav ol li {
+    list-style: none;
+    margin: 15px;
+    /* line-height: 120px; */
+}
+
+nav ul li a,
+nav ol li a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav ul li a:hover,
+nav ol li a:hover {
+    color: #fff;
+    background-color: rgb(167, 162, 162);
+    border-radius: 5px;
+    transition: 0.9s ease;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    margin-bottom: 30px;
+}
+
+header .main-1 {
+    position: relative;
+}
+
+header .text-1 {
+    position: absolute;
+    color: #fff;
+    top: 17%;
+    right: 40%;
+}
+
+header .icons {
+    position: absolute;
+    top: 70%;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    left: 33%;
+    flex-direction: row;
+}
+
+header .small {
+    font-size: 12px;
+}
+
+header .icons i {
+    margin: 15px;
+}
+
+header button {
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid#fff;
+    border-radius: 55px;
+    padding: 0 40px 0 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+header button:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media(max-width:991px) {
+    header .icons {
+        left: 20%;
+    }
+}
+
+.sec-1 #more {
+    font-size: 25px;
+}
+
+.sec-1 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-1 .div-1 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-2 .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sec-2 .rounded {
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.sec-2 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-2 .div-1 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-2 #more {
+    font-size: 40px;
+}
+
+.sec-3 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-3 .div-1 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-4 #more {
+    font-size: 25px;
+}
+
+.sec-4 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-4 .div-1 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-5 {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.sec-5 img {
+    position: relative;
+    z-index: 0;
+}
+
+.sec-5 .overlay {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    z-index: 1;
+}
+
+.sec-5 #more {
+    font-size: 25px;
+}
+
+.sec-5 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-5 .contain .div-1 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-6 {
+    position: relative;
+    margin-top: 40px;
+}
+
+.sec-6 img {
+    position: relative;
+    z-index: 0;
+}
+
+.sec-6 .overlay {
+    position: absolute;
+    top: 8%;
+    left: 70%;
+    z-index: 1;
+}
+
+.sec-6 #more {
+    font-size: 25px;
+}
+
+.sec-6 .div-1 button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 35px 0 35px;
+    text-transform: uppercase;
+    font-size: 10px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.sec-6 button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.sec-7 {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.sec-7 .flex-7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.line {
+    border: 180px solid #000;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+footer .contain-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.text99 button {
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 55px;
+    padding: 0 50px 0 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    transition: 0.9s ease;
+    margin: 0 0 0 15px;
+}
+
+.text99 .difer {
+    color: #fff;
+    background: #000;
+    border: 3px solid #fff;
+}
+
+.text99 button:hover {
+    color: rgb(10, 10, 10);
+    background-color: rgb(224, 224, 224);
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+footer ul li {
+    margin: 5px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
